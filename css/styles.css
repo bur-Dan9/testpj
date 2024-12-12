@@ -72,21 +72,72 @@ header {
     display: flex;
     align-items: center;
 }
+
 .logo-header {
     margin-right: 135px;
-}
+} 
 @media only screen and (min-width:768px) {
     .logo-header {
             margin-right: 448px;
         }
 }
+@media only screen and (min-width:1080px) {
+    .logo-header {
+        margin-right: 366px;
+    }
+}
+
 @media only screen and (min-width:768px) {
     .icon-logo {
         width: 216px;
         height: 20px;
     }
 }
-
+.nav-list {
+    display: none;
+}
+@media only screen and (min-width:1080px) {
+    .nav-list {
+        display: flex;
+        gap: 8px;
+        margin-right: 20px;
+    }
+}
+.nav-li {
+    white-space: nowrap;
+    color: #FBFBFB;
+    background-color: transparent;
+    border: 2px solid #FBFBFB;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    text-align: center;
+    }
+    
+.nav-li:hover {
+        background-color: #D4BFC4;
+        color: #7A3145;
+        border-color: #7A3145;
+    }
+    
+.nav-li:active {
+        background-color: #FBFBFB;
+        color: #7A3145;
+        border-color: #FBFBFB;
+    }
+.shop-btn-header {
+    display: none;
+}
+@media only screen and (min-width:1080px) {
+.shop-btn-header {
+        display: flex;
+    }
+}
 .hedder-burger {
     width: 32px;
     height: 32px;
@@ -121,6 +172,11 @@ header {
     transition: 300ms ease-in;
     transition-property: transform;
 }
+@media only screen and (min-width:768px) {
+    .mobail-menu {
+        
+    }
+}
 @media only screen and (min-width:1080px) {
     .mobail-menu {
         display: none;
@@ -151,7 +207,8 @@ header {
     flex-direction: column;
     gap: 24px;
 }
-.nav-li {
+
+.mob-li {
     color: #7A3145;
     background-color: #FBFBFB;
     border: 2px solid #FBFBFB;
@@ -166,18 +223,13 @@ header {
     text-align: center;
 }
 
-.nav-li:hover {
-    background-color: #D4BFC4;
-    color: #7A3145;
-    border-color: #7A3145;
-}
-
-.nav-li:active {
+.mob-li:active {
     background-color: #FBFBFB;
     color: #7A3145;
     border-color: #FBFBFB;
 }
 .shop-btn {
+    white-space: nowrap;
     margin-top: auto;
     color: #FBFBFB;
     background-color: #7A3145;
